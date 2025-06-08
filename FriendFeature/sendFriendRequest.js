@@ -1,5 +1,5 @@
-const getDriver = require('./driver').getDriver;
-const { typeTextWithKeys } = require('./writeText');
+const getDriver = require('../Main/driver').getDriver;
+const { typeTextWithKeys } = require('../Main/writeText');
 async function sendFriendRequestFunction() {
     const driver = await getDriver();
     

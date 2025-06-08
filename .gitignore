@@ -1,1 +1,7 @@
 node_modules
+package-lock.json
+tsconfig.json
+wdio.conf.ts
+test
+wdio.conf.js
+package.json

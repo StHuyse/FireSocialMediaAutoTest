@@ -20,7 +20,7 @@ async function signInFunction() {
 
     const usernameField = await driver.$('~TAG_USERNAME');
     await usernameField.click();
-    await typeTextWithKeys(driver, 'khua01@gmail.com');
+    await typeTextWithKeys(driver, 'khua05@gmail.com');
 
     const passwordField = await driver.$('~TAG_PASSWORD');
     await passwordField.click();

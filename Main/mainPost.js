@@ -1,6 +1,6 @@
-const { signInFunction } = require('./signIn');
+const { signInFunction } = require('../SignInFeature/signIn');
 const { getDriver } = require('./driver');
-const { createPostFunction } = require('./post');
+const { createPostFunction } = require('../PostFeature/post');
 async function runSignInPost() {
   const driver = await getDriver();
   await driver.pause(1000);

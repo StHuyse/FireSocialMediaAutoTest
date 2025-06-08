@@ -1,5 +1,5 @@
-const { getDriver } = require('./driver');
-
+const { getDriver } = require('../Main/driver');
+const { typeTextWithKeys } = require('../Main/writeText');
 async function createPostFunction(driver) {
   if (driver == null) {
     driver = await getDriver();
@@ -37,11 +37,6 @@ async function createPostFunction(driver) {
   }finally {
     await driver.pause(1000);
     //await driver.deleteSession();
-  }
-}
-async function typeTextWithKeys(driver, text) {
-  for (const char of text) {
-    await driver.keys(char);
   }
 }
 

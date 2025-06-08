@@ -35,7 +35,7 @@ async function signUpFunction() {
     const usernameField = await driver.$('~TAG_USERNAME');
 await usernameField.click();  // Focus the field first
 
-await typeTextWithKeys(driver, 'khua12@gmail.com');
+await typeTextWithKeys(driver, 'khua20@gmail.com');
 
 
 const passwordField = await driver.$('~TAG_PASSWORD');

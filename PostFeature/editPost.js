@@ -1,4 +1,4 @@
-const getDriver = require('./driver').getDriver;
+const getDriver = require('../Main/driver').getDriver;
 
 async function editPostFunction() {
   const driver = await getDriver();

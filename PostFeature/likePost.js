@@ -1,11 +1,11 @@
-const { getDriver } = require('./driver');
+const { getDriver } = require('../Main/driver');
 
 async function likePostFunction() {
   const driver = await getDriver();
 
   try {
     // Scroll to the post with the specific text
-    const postElement = await driver.$('android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Code ngu như lợn"))');
+    const postElement = await driver.$('android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Code for FireSocialMedia Auto Test"))');
     await postElement.click();
 //Like the post
     await driver.pause(1000);
